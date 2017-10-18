@@ -1,0 +1,10 @@
+#main{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+.beer-container{
+  margin: 10;
+  padding: 20px
+}
