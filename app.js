@@ -23,34 +23,38 @@ var renderBeerTile = function(beer){
   framingDiv.appendChild(div)
   addIngredients(beer);
 
-  // framingDiv.addEventListener("click", function(beer){
-  //   displayExtraDetails(beer);
-  //   console.log("hover function... yah?", beer);
-  // })
+  framingDiv.addEventListener("click", function(beer){
+    // displayExtraDetails(beer);
+    // console.log("hover function... yah?", beer);
+  })
 }
 
-var displayExtraDetails = function(beer){
-  console.log(beer);
-  var malt = document.createElement("p")
-  malt.innerText = "Malt(s):"
-  var ul = document.createElement("ul");
-  var li1 = document.createElement("li")
-  var description = document.createElement("p");
-  description.innerText = beer.description;
-  var foodPairing = document.createElement("p");
-  foodPairing.innerText = "This lovely brew pairs with";
+var addIngredients = function(beer){
+  console.log("Beer"+ beer.id,beer.food_pairing);
+  // console.log(beer.ingredients);
+  console.log("malt",beer.ingredients.malt);
+  console.log("hops",beer.ingredients.hops);
+  console.log("yeast",beer.ingredients.yeast);
+  // var malt = document.createElement("p")
+  // malt.innerText = "Malt(s):"
+  // var ul = document.createElement("ul");
+  // var li1 = document.createElement("li")
+  // var description = document.createElement("p");
+  // description.innerText = beer.description;
+  // var foodPairing = document.createElement("p");
+  // foodPairing.innerText = "This lovely brew pairs with";
   // for(var i = 0; i < 10; i++){
   //   if(!undefined){foodPairing.innerText += ", " + this.beer.food_pairing[i] ;}
   // };
-  var ingredients = document.createElement("p");
-  ingredients.innerText = "Ingredients are: ";
-  var malt = [];
-  var hops = [];
-  for(var i = 0; i < 10; i++){
-
-  }
-  div.appendChild(description);
-  div.appendChild(foodPairing);
+  // var ingredients = document.createElement("p");
+  // ingredients.innerText = "Ingredients are: ";
+  // var malt = [];
+  // var hops = [];
+  // for(var i = 0; i < 10; i++){
+  //
+  // }
+  // div.appendChild(description);
+  // div.appendChild(foodPairing);
 
 }
 
